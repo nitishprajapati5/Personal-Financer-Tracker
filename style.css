@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
+body{
+    background-color: #212121;
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;    
+}
+
+.container{
+    border: 0px solid white;
+    height: calc(100vh-3px);
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 99vh;
+
+}
+
+.left-card{
+    border: 2px solid white;
+    width: 45%;
+    height: 100%;
+    margin-left: 3%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(255, 251, 251, 0.35) 0px 5px 15px;
+}
+
+.right-card{
+    border: 2px solid white;
+    width: 45%;
+    height: 100%;
+    margin-left:3% ;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(255, 251, 251, 0.35) 0px 5px 15px;
+}
+
+.left-card-parent{
+    width: 85%;
+}
+
+.Income{
+    margin:5%;
+    width: 85%;
+}
+
+.Expenses{
+    margin:5%;
+    width: 85%;
+}
+
+.Expenses{
+    margin:5%
+}
+
+.incomeForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.incomeForm > * {
+    margin-top: 0.5%;
+}
+
+#Description{
+    width: 100%;
+}
+
+#AddYourIncome{
+    width: 100%;
+}
+
+.IncomeSubmit > *{
+    margin-top: 5%;
+    
+}
+
+.IncomeSubmit{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.IncomeSubmit button{
+    background-color: blue;
+    color: white;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    box-shadow: rgba(239, 117, 117, 0.35) 0px 5px 15px;
+}
+
+.calculateExpenses{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.calculateExpenses > *{
+    margin: 1%;
+    box-shadow: rgba(255, 251, 251, 0.35) 5px 5px 5px 5px;
+}
+
+.incomeBox{
+    width: 50%;
+}
+
+.incomeBox,.expenseBox > * {
+    align-items: center;
+    text-align: center;   
+}
+
+.expenseBox{
+    width: 50%;
+}
+
+.expenseBox h2{
+    color: red;
+    border: 1px solid black;
+    padding: 5%;
+}
+
+.incomeBox h2{
+    color: green;
+    border: 1px solid black;
+    padding: 5%;
+}
+
+
+
+/* --------------------- Right Side Card Starts-----------------*/
+.rightHeader{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-right: 3%;
+}
+
+.rightHeader > * {
+    margin-left: 0.5%;
+}
+
+.right-card-parent{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+table{
+    margin:auto;
+    width: 90%;
+}
+
+#pagination{
+    text-align : center
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+th,td{
+    padding: 3%;
+}
+
+.showTable{
+    margin-top: 2%;
+    height: 85%;
+}

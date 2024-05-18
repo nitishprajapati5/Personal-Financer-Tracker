@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Personal Finance Tracker</h1>
+        </div>
+        <div class="parent">
+            <div class="left-card">
+                <div class="left-card-parent">
+                    <div class="Income">
+                        <h2>Income</h1>
+                        <div class="incomeForm">
+                            <label>Description</label>
+                            <input id="Description" type="text" placeholder="Enter your Input"/>
+                            <label>Add/Update Your Income</label>
+                            <input id="AddYourIncome" type="text" placeholder="0" />
+
+                        </div>
+                        <div class="IncomeSubmit">
+                            <button id="incomeAdd" type="submit">Add/Update Income</button>
+                        </div>
+                        
+                    </div>
+                    <div class="Expenses">
+                        <h2>Expenses</h2>
+                        <div class="incomeForm">
+                            <label>Description</label>
+                            <input id="expensesDescription" type="text" placeholder="Enter your Input"/>
+                            <label>Add/Update Your Income</label>
+                            <input id="AddYourExpense" type="text" placeholder="0" />
+                        </div>
+                        <div class="IncomeSubmit">
+                            <button id="expenseAdd" type="submit">Add/Update Expenses</button>
+                        </div>
+                    </div>
+                    <div class="calculateExpenses">
+                        <div class="incomeBox">
+                            <h2>
+                                Total Income is :- <span id="incomeBlock">0</span>
+                            </h2>
+                        </div>
+                        <div class="expenseBox">
+                            <h2>
+                                Total Expenses is : <span id="expensesBlock">0</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="right-card">
+                <div class="right-card-parent">
+                    <div class="rightHeader">
+                        <button id="filter">Filter Based on Month</button>
+                        <input class="Description" type="text" placeholder="Search.."/>
+                    </div>
+                    <div class="showTable">
+                        <table id="expensesIncomeTable">
+                            <tr>
+                                <th>
+                                    Month
+                                </th>
+                                <th>
+                                    Income
+                                </th>
+                                <th>
+                                    Expenses
+                                </th>
+                                <th>
+                                    Description
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div id="pagination">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+
+<script type="text/javascript" src="script.js" defer></script>
+
+</html>
